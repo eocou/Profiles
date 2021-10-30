@@ -1,0 +1,66 @@
+# > South Korea
+# NAVER Corp.
+USER-AGENT, Naver%20TV*, South Korea
+HOST-SUFFIX, naver.com, South Korea
+HOST-SUFFIX, pstatic.net, South Korea
+HOST-SUFFIX, nis-corp.net, South Korea
+HOST-SUFFIX, nis-corp.com, South Korea
+HOST-SUFFIX, naverins.com, South Korea
+HOST-SUFFIX, navercorp.net, South Korea
+HOST-SUFFIX, lineband.net, South Korea
+HOST-SUFFIX, ncloudstorage.com, South Korea
+HOST-SUFFIX, naverlabs.net, South Korea
+HOST-SUFFIX, naverlabs.com, South Korea
+HOST-SUFFIX, phinf.net, South Korea
+HOST-SUFFIX, sticker.ly, South Korea
+HOST-SUFFIX, longlivecomics.com, South Korea
+HOST-SUFFIX, cakecorp.com, South Korea
+HOST-SUFFIX, v-live.tv, South Korea
+HOST-SUFFIX, worksmobile.net, South Korea
+HOST-SUFFIX, words-up.com, South Korea
+HOST-SUFFIX, nits-corp.com, South Korea
+HOST-SUFFIX, linedict.com, South Korea
+HOST-SUFFIX, navercdn.net, South Korea
+HOST-SUFFIX, navercdn.com, South Korea
+HOST-SUFFIX, nis-corp.com, South Korea
+HOST-SUFFIX, grafolio.com, South Korea
+HOST-SUFFIX, disco.app, South Korea
+HOST-SUFFIX, game.me, South Korea
+HOST-SUFFIX, webtoons.com, South Korea
+HOST-SUFFIX, whale.app, South Korea
+HOST-SUFFIX, money.me, South Korea
+HOST-SUFFIX, shop.me, South Korea
+HOST-SUFFIX, naver.me, South Korea
+HOST-SUFFIX, band.us, South Korea
+HOST-SUFFIX, naver.net, South Korea
+HOST-SUFFIX, map.me, South Korea
+HOST-SUFFIX, naver.mobi, South Korea
+HOST-SUFFIX, kids.me, South Korea
+HOST-SUFFIX, office.me, South Korea
+HOST-SUFFIX, naver.app, South Korea
+HOST-SUFFIX, naver.asia, South Korea
+HOST-SUFFIX, box.me, South Korea
+HOST-SUFFIX, vlive.app, South Korea
+HOST-SUFFIX, health.me, South Korea
+HOST-SUFFIX, box.me, South Korea
+HOST-SUFFIX, box.me, South Korea
+
+# Whois Corp.
+HOST-SUFFIX, smartmediarep.com, South Korea
+
+# Kakao Corp
+HOST-SUFFIX, daum.net, South Korea
+HOST-SUFFIX, daumcdn.net, South Korea
+HOST-SUFFIX, kakao.co.kr, South Korea
+HOST-SUFFIX, kakao.com, South Korea
+HOST-SUFFIX, kakaocdn.net, South Korea
+HOST-SUFFIX, tistory.com, South Korea
+HOST-SUFFIX, hanmail.net, South Korea
+HOST-SUFFIX, yozm.com, South Korea
+HOST-SUFFIX, lolo.net, South Korea
+HOST-SUFFIX, cuve.com, South Korea
+
+# Tving Co., Ltd
+HOST-SUFFIX, tving.com, South Korea
+
+HOST-SUFFIX, kr, South Korea
