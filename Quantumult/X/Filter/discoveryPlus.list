@@ -1,0 +1,10 @@
+# > discovery+
+USER-AGENT,discovery+*,discovery+
+USER-AGENT,DPlus*,discovery+
+DOMAIN-KEYWORD,discoveryplus,discovery+
+DOMAIN-SUFFIX,discoveryplus.com,discovery+
+DOMAIN-SUFFIX,disco-api.com,discovery+
+DOMAIN-SUFFIX,dnitv.com,discovery+
+DOMAIN-SUFFIX,uplynk.com,discovery+
+DOMAIN-SUFFIX,litix.io,discovery+
+DOMAIN,kvinit-prod.api.kochava.com,discovery+
