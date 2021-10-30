@@ -95,9 +95,6 @@ HOST, logs.chelaile.net.cn, Advertising
 HOST, dispatcher.360in.com, Advertising
 HOST, ad.360in.com, Advertising
 HOST, exp.360in.com, Advertising
-# (D)
-# Douban
-AND, ((USER-AGENT, Frodo*),  (HOST, 119.29.29.29)), Advertising
 # (G)
 # Google
 HOST-SUFFIX, doubleclick.net, Advertising
