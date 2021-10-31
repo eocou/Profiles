@@ -1,60 +1,57 @@
 {% if request.target == "clash" or request.target == "clashr" %}
-
-port: {{ default(global.clash.http_port, "7890") }}
-socks-port: {{ default(global.clash.socks_port, "7891") }}
+mixed-port: {{ default(global.clash.mixed_port, "7890") }}
 redir-port: {{ default(global.clash.redir_port, "7892") }}
 tproxy-port: {{ default(global.clash.tproxy_port, "7893") }}
 allow-lan: {{ default(global.clash.allow_lan, "false") }}
 mode: {{default(global.clash.mode, "rule")}}
 log-level: {{ default(global.clash.log_level, "info") }}
 ipv6: {{ default(global.clash.ipv6, "true") }}
-external-controller: {{default(global.clash.external_controller, "127.0.0.1:9090")}}
 {% if default(request.clash.tap, "") == "1" %}
 dns:
-  enabled: true
+  enable: true
   listen: 0.0.0.0:53
   ipv6: true
   default-nameserver:
-    - 94.140.14.14
-    - 94.140.15.15
-    - '[2a10:50c0::ad1:ff]:53'
-    - '[2a10:50c0::ad2:ff]:53'
     - 223.5.5.5
-    - '[2400:3200::1]:53'
+    - 1.1.1.1
+    - 1.0.0.1
+    - '[2606:4700:4700::1111]:53'
+    - '[2606:4700:4700::1001]:53'
   enhanced-mode: redir-host
-  use-hosts: false
+  use-hosts: true
   nameserver:
-    - https://dns.alidns.com/dns-query?
+    - https://dns.alidns.com/dns-query
     - https://1.1.1.1/dns-query
-    - tls://1.0.0.1:853
   fallback:
     - https://1.1.1.1/dns-query
-    - tls://1.0.0.1:853
+    - https://1.0.0.1/dns-query
   fallback-filter:
     geoip: true
+    ipcidr:
+      # - 240.0.0.0/4
 {% endif %}
 {% if default(request.clash.tun, "") == "1" %}
 dns:
-  enabled: true
+  enable: true
   ipv6: true
   default-nameserver:
-    - 94.140.14.14
-    - 94.140.15.15
-    - '[2a10:50c0::ad1:ff]:53'
-    - '[2a10:50c0::ad2:ff]:53'
     - 223.5.5.5
-    - '[2400:3200::1]:53'
+    - 1.1.1.1
+    - 1.0.0.1
+    - '[2606:4700:4700::1111]:53'
+    - '[2606:4700:4700::1001]:53'
   enhanced-mode: redir-host
-  use-hosts: false
+  use-hosts: true
   nameserver:
-    - https://dns.alidns.com/dns-query?
+    - https://dns.alidns.com/dns-query
     - https://1.1.1.1/dns-query
-    - tls://1.0.0.1:853
   fallback:
     - https://1.1.1.1/dns-query
-    - tls://1.0.0.1:853
+    - https://1.0.0.1/dns-query
   fallback-filter:
     geoip: true
+    ipcidr:
+      # - 240.0.0.0/4
 tun:
   enable: true
   stack: gvisor
@@ -69,23 +66,23 @@ dns:
   listen: 127.0.0.1:5450
   ipv6: true
   default-nameserver:
-    - 94.140.14.14
-    - 94.140.15.15
-    - '[2a10:50c0::ad1:ff]:53'
-    - '[2a10:50c0::ad2:ff]:53'
     - 223.5.5.5
-    - '[2400:3200::1]:53'
+    - 1.1.1.1
+    - 1.0.0.1
+    - '[2606:4700:4700::1111]:53'
+    - '[2606:4700:4700::1001]:53'
   enhanced-mode: redir-host
-  use-hosts: false
+  use-hosts: true
   nameserver:
-    - https://dns.alidns.com/dns-query?
+    - https://223.5.5.5/dns-query
     - https://1.1.1.1/dns-query
-    - tls://1.0.0.1:853
   fallback:
     - https://1.1.1.1/dns-query
-    - tls://1.0.0.1:853
+    - https://1.0.0.1/dns-query
   fallback-filter:
     geoip: true
+    ipcidr:
+      # - 240.0.0.0/4
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
