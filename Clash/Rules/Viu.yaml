@@ -1,5 +1,6 @@
 payload:
-  - USER-AGENT, Viu*
-  - DOMAIN-SUFFIX, viu.com
-  - DOMAIN, dfp6rglgjqszk.cloudfront.net
-  - DOMAIN, d1k2us671qcoau.cloudfront.net
+  # USER-AGENT,Viu*
+  # PROCESS-NAME,com.viu.phone
+  - DOMAIN-SUFFIX,viu.com
+  - DOMAIN,dfp6rglgjqszk.cloudfront.net
+  - DOMAIN,d1k2us671qcoau.cloudfront.net
