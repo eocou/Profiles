@@ -1,6 +1,5 @@
-# > Hulu
-HOST-SUFFIX, hulu.com, Hulu
-HOST-SUFFIX, huluim.com, Hulu
-HOST-SUFFIX, hulustream.com, Hulu
-HOST, cws-hulu.conviva.com, Hulu
-HOST, assetshuluimcom-a.akamaihd.net, Hulu
+HOST-SUFFIX,hulu.com,Hulu
+HOST-SUFFIX,huluim.com,Hulu
+HOST-SUFFIX,hulustream.com,Hulu
+HOST,cws-hulu.conviva.com,Hulu
+HOST,assetshuluimcom-a.akamaihd.net,Hulu

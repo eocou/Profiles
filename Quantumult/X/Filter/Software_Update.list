@@ -1,26 +1,25 @@
-# > Software Update
-# macOS updates
-HOST, configuration.apple.com, Software Update
-HOST, gnf-mdn.apple.com, Software Update
-HOST, gnf-mr.apple.com, Software Update
-HOST, gs.apple.com, Software Update
-HOST, ig.apple.com, Software Update
-HOST, skl.apple.com, Software Update
-HOST, swcdn.apple.com, Software Update
-HOST, swdist.apple.com, Software Update
-HOST, swdownload.apple.com, Software Update
-HOST, swpost.apple.com, Software Update
-HOST, swscan.apple.com, Software Update
-# macOS Recovery
-HOST, oscdn.apple.com, Software Update
-HOST, osrecovery.apple.com, Software Update
-# iOS and iPadOS updates
-HOST, appldnld.apple.com, Software Update
-HOST, ns.itunes.apple.com, Software Update
-# iOS iPadOS tvOS and macOS updates
-HOST, gg.apple.com
-HOST, gdmf.apple.com, Software Update
-HOST, mesu.apple.com, Software Update
-HOST, updates.cdn-apple.com, Software Update
-HOST, updates-http.cdn-apple.com, Software Update
-HOST, xp.apple.com
+# > macOS updates
+HOST,configuration.apple.com,Software Update
+HOST,gnf-mdn.apple.com,Software Update
+HOST,gnf-mr.apple.com,Software Update
+HOST,gs.apple.com,Software Update
+HOST,ig.apple.com,Software Update
+HOST,skl.apple.com,Software Update
+HOST,swcdn.apple.com,Software Update
+HOST,swdist.apple.com,Software Update
+HOST,swdownload.apple.com,Software Update
+HOST,swpost.apple.com,Software Update
+HOST,swscan.apple.com,Software Update
+# > macOS Recovery
+HOST,oscdn.apple.com,Software Update
+HOST,osrecovery.apple.com,Software Update
+# > iOS and iPadOS updates
+HOST,appldnld.apple.com,Software Update
+HOST,ns.itunes.apple.com,Software Update
+# > iOS, iPadOS, tvOS, and macOS updates
+HOST,gg.apple.com,Software Update
+HOST,gdmf.apple.com,Software Update
+HOST,mesu.apple.com,Software Update
+HOST,updates.cdn-apple.com,Software Update
+HOST,updates-http.cdn-apple.com,Software Update
+HOST,xp.apple.com,Software Update

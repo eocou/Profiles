@@ -1,5 +1,5 @@
-# > WeTV
-USER-AGENT, WeTV*, WeTV
-HOST-SUFFIX, wetv.vip, WeTV
-HOST-SUFFIX, wetvinfo.com, WeTV
-IP-CIDR, 150.109.28.51/32, WeTV
+USER-AGENT,WeTV*,WeTV
+HOST-SUFFIX,wetv.vip,WeTV
+HOST-SUFFIX,wetvinfo.com,WeTV
+HOST,wetv.tv.qq.com,WeTV
+HOST,wetv.acc.qq.com,WeTV
