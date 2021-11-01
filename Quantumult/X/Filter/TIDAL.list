@@ -1,5 +1,0 @@
-# > TIDAL
-USER-AGENT, TIDAL*, TIDAL
-HOST-SUFFIX, tidal-cms.s3.amazonaws.com, TIDAL
-HOST-SUFFIX, tidal.com, TIDAL
-HOST-SUFFIX, tidalhifi.com, TIDAL
