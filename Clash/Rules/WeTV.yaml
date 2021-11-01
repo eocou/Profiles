@@ -1,8 +1,0 @@
-payload:
-  - PROCESS-NAME,com.tencent.qqlivei18n
-  - PROCESS-NAME,com.ktcp.osvideo
-  - DOMAIN-SUFFIX,wetv.vip
-  - DOMAIN-SUFFIX,wetvinfo.com
-  - DOMAIN,wetv.tv.qq.com
-  - DOMAIN,wetv.acc.qq.com
-  - IP-CIDR,150.109.28.51/32,no-resolve
