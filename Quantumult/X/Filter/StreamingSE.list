@@ -1,0 +1,13 @@
+# > bilibili
+HOST-SUFFIX,biliintl.com,Bilibili
+HOST,p-bstarstatic.akamaized.net,Bilibili
+HOST,upos-bstar-mirrorakam.akamaized.net,Bilibili
+HOST,upos-bstar1-mirrorakam.akamaized.net,Bilibili
+HOST-SUFFIX,biliapi.net,Bilibili
+HOST-SUFFIX,bilibili.com,Bilibili
+HOST,upos-hz-mirrorakam.akamaized.net,Bilibili
+HOST-KEYWORD,cn-hk-eq-bcache-,Bilibili
+# > 愛奇藝台灣站
+HOST,cache.video.iqiyi.com,iQIYI
+IP-CIDR,116.211.202.206/32,iQIYI
+IP-CIDR,116.211.202.216/32,iQIYI
