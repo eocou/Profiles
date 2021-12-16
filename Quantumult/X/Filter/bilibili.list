@@ -1,0 +1,15 @@
+USER-AGENT,*bili*,bilibili
+HOST-SUFFIX,bilibili.com,bilibili
+HOST-SUFFIX,bilibili.tv,bilibili
+HOST-SUFFIX,biliapi.net,bilibili
+HOST-SUFFIX,biliapi.com,bilibili
+HOST-SUFFIX,bilivideo.com,bilibili
+HOST-SUFFIX,acgvideo.com,bilibili
+HOST-SUFFIX,acg.tv,bilibili
+HOST-SUFFIX,b23.tv,bilibili
+HOST-SUFFIX,hdslb.com,bilibili
+HOST,upos-hz-mirrorakam.akamaized.net,bilibili
+HOST-KEYWORD,bilibili,bilibili
+IP-CIDR,203.107.1.65/32,bilibili
+USER-AGENT,bili-inter*,bilibili
+HOST,apiintl.biliapi.net,bilibili
