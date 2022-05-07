@@ -1,4 +1,5 @@
 payload:
+  # > Apple TV
   # PROCESS-NAME,TV
   # USER-AGENT,AppleTV*
   # USER-AGENT,com.apple.tv*
@@ -10,3 +11,4 @@ payload:
   - DOMAIN,hls-amt.itunes.apple.com
   - DOMAIN,uts-api.itunes.apple.com
   - DOMAIN,play-edge.itunes.apple.com
+  - DOMAIN,tv.applemusic.com
