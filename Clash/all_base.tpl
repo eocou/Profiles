@@ -1,12 +1,16 @@
 {% if request.target == "clash" or request.target == "clashr" %}
-mixed-port: {{ default(global.clash.mixed_port, "7890") }}
-redir-port: {{ default(global.clash.redir_port, "7892") }}
-tproxy-port: {{ default(global.clash.tproxy_port, "7893") }}
-allow-lan: {{ default(global.clash.allow_lan, "false") }}
-mode: {{default(global.clash.mode, "rule")}}
-log-level: {{ default(global.clash.log_level, "info") }}
-ipv6: {{ default(global.clash.ipv6, "true") }}
-{% if default(request.clash.tap, "") == "1" %}
+
+mixed-port: 7890
+redir-port: 7891
+tproxy-port: 7892
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+{% if default(request.clash.dns, "") == "1" %}
 dns:
   enable: true
   listen: 0.0.0.0:53
@@ -15,74 +19,27 @@ dns:
     - 223.5.5.5
     - 1.1.1.1
     - 1.0.0.1
-    - '[2606:4700:4700::1111]:53'
-    - '[2606:4700:4700::1001]:53'
-  enhanced-mode: redir-host
-  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: false
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
   nameserver:
     - https://dns.alidns.com/dns-query
-    - https://1.1.1.1/dns-query
+    - https://1.1.1.1/dns-query # DNS over HTTPS
   fallback:
     - https://1.1.1.1/dns-query
     - https://1.0.0.1/dns-query
   fallback-filter:
     geoip: true
+    geoip-code: CN
     ipcidr:
-      # - 240.0.0.0/4
-{% endif %}
-{% if default(request.clash.tun, "") == "1" %}
-dns:
-  enable: true
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 1.1.1.1
-    - 1.0.0.1
-    - '[2606:4700:4700::1111]:53'
-    - '[2606:4700:4700::1001]:53'
-  enhanced-mode: redir-host
-  use-hosts: true
-  nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://1.1.1.1/dns-query
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://1.0.0.1/dns-query
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      # - 240.0.0.0/4
-tun:
-  enable: true
-  stack: gvisor
-  dns-hijack:
-    - 198.18.0.2:53
-  auto-route: true
-  auto-detect-interface: true
-{% endif %}
-{% if default(request.clash.adg, "") == "1" %}
-dns:
-  enabled: true
-  listen: 127.0.0.1:5450
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 1.1.1.1
-    - 1.0.0.1
-    - '[2606:4700:4700::1111]:53'
-    - '[2606:4700:4700::1001]:53'
-  enhanced-mode: redir-host
-  use-hosts: true
-  nameserver:
-    - https://223.5.5.5/dns-query
-    - https://1.1.1.1/dns-query
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://1.0.0.1/dns-query
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      # - 240.0.0.0/4
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.duckduckgo.com'
+      - '+.youtube.com'
 {% endif %}
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
